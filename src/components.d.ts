@@ -10,9 +10,9 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 export namespace Components {
   interface FireWebrtc {
-    'muted': boolean;
-    'poster': string;
-    'src': string;
+    'firebasecred': string;
+    'iceserver': string;
+    'someFunc': Function;
   }
 }
 
@@ -31,9 +31,9 @@ declare global {
 
 declare namespace LocalJSX {
   interface FireWebrtc extends JSXBase.HTMLAttributes<HTMLFireWebrtcElement> {
-    'muted'?: boolean;
-    'poster'?: string;
-    'src'?: string;
+    'firebasecred'?: string;
+    'iceserver'?: string;
+    'someFunc'?: Function;
   }
 
   interface IntrinsicElements {
