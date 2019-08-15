@@ -9,6 +9,20 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
+  interface FireWebrtc {
+    /**
+    * To mute the video
+    */
+    'muted': boolean;
+    /**
+    * The image shown while the video is loading
+    */
+    'poster': string;
+    /**
+    * The video src
+    */
+    'src': string;
+  }
   interface MyComponent {
     /**
     * The first name
@@ -28,17 +42,38 @@ export namespace Components {
 declare global {
 
 
+  interface HTMLFireWebrtcElement extends Components.FireWebrtc, HTMLStencilElement {}
+  var HTMLFireWebrtcElement: {
+    prototype: HTMLFireWebrtcElement;
+    new (): HTMLFireWebrtcElement;
+  };
+
   interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
   var HTMLMyComponentElement: {
     prototype: HTMLMyComponentElement;
     new (): HTMLMyComponentElement;
   };
   interface HTMLElementTagNameMap {
+    'fire-webrtc': HTMLFireWebrtcElement;
     'my-component': HTMLMyComponentElement;
   }
 }
 
 declare namespace LocalJSX {
+  interface FireWebrtc extends JSXBase.HTMLAttributes<HTMLFireWebrtcElement> {
+    /**
+    * To mute the video
+    */
+    'muted'?: boolean;
+    /**
+    * The image shown while the video is loading
+    */
+    'poster'?: string;
+    /**
+    * The video src
+    */
+    'src'?: string;
+  }
   interface MyComponent extends JSXBase.HTMLAttributes<HTMLMyComponentElement> {
     /**
     * The first name
@@ -55,6 +90,7 @@ declare namespace LocalJSX {
   }
 
   interface IntrinsicElements {
+    'fire-webrtc': FireWebrtc;
     'my-component': MyComponent;
   }
 }

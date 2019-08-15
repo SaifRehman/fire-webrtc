@@ -1,7 +1,7 @@
 {
-  "name": "stencil-starter-project-name",
+  "name": "fire-webrtc",
   "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "description": "webcompenent for p2p vedio chat usinh webrtc and a signalling server using firebase",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "es2015": "dist/esm/index.mjs",
@@ -9,7 +9,7 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/stencil-starter-project-name/stencil-starter-project-name.js",
+  "unpkg": "dist/fire-rtc/fire-rtc.js",
   "files": [
     "dist/",
     "loader/"

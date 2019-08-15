@@ -5,13 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
   <title>Stencil Component Starter</title>
 
-  <script type="module" src="/build/stencil-starter-project-name.esm.js"></script>
-  <script nomodule src="/build/stencil-starter-project-name.js"></script>
+  <script type="module" src="/build/fire-rtc.esm.js"></script>
+  <script nomodule src="/build/fire-rtc.js"></script>
 
 </head>
 <body>
 
-  <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
-
+  <fire-webrtc
+    src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+    poster="https://sample-videos.com/img/Sample-png-image-500kb.png">
+</fire-webrtc>
 </body>
 </html>
