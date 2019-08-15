@@ -21,7 +21,11 @@
     "test.watch": "stencil test --spec --e2e --watchAll"
   },
   "devDependencies": {
-    "@stencil/core": "^1.0.7"
+    "@stencil/core": "^1.0.7",
+    "@stencil/sass": "^1.0.1"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@angular/core": "^8.2.2"
+  }
 }

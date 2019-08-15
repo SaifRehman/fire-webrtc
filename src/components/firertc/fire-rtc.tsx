@@ -1,36 +1,41 @@
-import { Component, Prop, Element, h } from '@stencil/core';
+import { Component, Prop, h, State } from "@stencil/core";
 
 @Component({
-  tag: 'fire-webrtc',
-  styleUrl: 'fire-rtc.css',
+  tag: "fire-webrtc",
+  styleUrl: "fire-rtc.scss",
   shadow: true
 })
+
 export class FirertcComponent {
-  /**
-   * The video src
-   */
+
   @Prop() src: string;
 
-  /**
-   * The image shown while the video is loading
-   */
   @Prop() poster: string;
 
-  /**
-   * To mute the video
-   */
+  @State() vid: any;
+
   @Prop() muted: boolean = true;
 
-  @Element() private videoElement: HTMLVideoElement; // pointer to the created video element
+   video: HTMLVideoElement;
 
   componentDidLoad() {
-    // sometimes, as the component is loaded dynamically, the video starts with sound, even if muted property is set to true
-    if (this.muted) {
-      this.videoElement.muted = true;
-    }
+    navigator.mediaDevices
+    .getUserMedia({
+      audio: false,
+      video: true
+    })
+    .then(stream => {
+      this.video.srcObject = stream;
+      console.log(this.video);
+    });
   }
 
   render() {
-    return < video autoplay loop playsinline preload="auto" muted={this.muted} src={this.src} poster={this.poster}></video>;
+    return (
+      <div class="video">
+    <video ref={(el: HTMLVideoElement) => this.video = el}   autoplay playsinline preload="true"> Video stream not available.</video>
+    </div>
+    );
+
   }
 }
