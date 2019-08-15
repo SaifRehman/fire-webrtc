@@ -1,6 +1,6 @@
 {
   "name": "fire-webrtc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "webcompenent for p2p vedio chat usinh webrtc and a signalling server using firebase",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
