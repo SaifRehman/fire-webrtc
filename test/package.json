@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fire-webrtc": "0.0.1"
+    "fire-webrtc": "0.0.3"
   }
 }
