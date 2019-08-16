@@ -31,5 +31,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/SaifRehman/fire-webrtc"
-}
+},
+"keywords": ["webrtc","p2p","stencil","webcomponent"]
 }
