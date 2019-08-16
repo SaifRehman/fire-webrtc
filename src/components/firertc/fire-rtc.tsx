@@ -124,8 +124,8 @@ export class FirertcComponent {
   render() {
     return (
       <div>
-        <div class="endvideo">
-          <video
+        <div class="fab" onClick={() => this.showFriendsFace()}> 📞 </div>
+          <video class="endvideo"
             ref={(el: HTMLVideoElement) => (this.endvideo = el)}
             autoplay
             playsinline
@@ -133,9 +133,7 @@ export class FirertcComponent {
           >
             Video stream not available.
           </video>
-        </div>
-        <div class="video" onClick={() => this.showFriendsFace()}>
-          <video
+          <video class="video" 
             ref={(el: HTMLVideoElement) => (this.video = el)}
             autoplay
             playsinline
@@ -143,11 +141,6 @@ export class FirertcComponent {
           >
             Video stream not available.
           </video>
-        </div>
-
-        <button onClick={() => this.showFriendsFace()}>
-          yesssssssssssss
-        </button>
       </div>
     );
   }
