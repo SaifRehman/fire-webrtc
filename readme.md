@@ -2,7 +2,7 @@
 
 # Introduction
 
-***Fire Webrtc*** is a framework agnostic web componenet that allows you to add simple live video conferencing features with just HTML tags. It is based in p2p webrtc protocol and firebase as a signalling server. It hides away the complexity of signalling, STUN/TURN server, and peer connections. You may run it in any framework with just few lines of HTML code.
+***Fire Webrtc*** is a framework agnostic web component that allows you to add simple live video conferencing features with just HTML tags. It is based in p2p webrtc protocol and firebase as a signalling server. It hides away the complexity of signalling, STUN/TURN server, and peer connections. You may run it in any framework with just few lines of HTML code.
 
 ## Quick start
 
@@ -20,8 +20,8 @@
  ```
 3. Load fire-webrtc library in HTML
 ``` HTML
-  <script type="module" src="https://unpkg.com/fire-webrtc@0.0.6/dist/fire-rtc/fire-rtc.esm.js"></script>
-  <script nomodule src="https://unpkg.com/fire-webrtc@0.0.6/dist/fire-rtc.js"></script>
+  <script type="module" src="https://unpkg.com/fire-webrtc@0.0.7/dist/fire-rtc/fire-rtc.esm.js"></script>
+  <script nomodule src="https://unpkg.com/fire-webrtc@0.0.7/dist/fire-rtc.js"></script>
 ```
 4. Fire up the webcomponent
 
