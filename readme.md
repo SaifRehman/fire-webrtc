@@ -2,7 +2,7 @@
 
 # Introduction
 
-*** Fire Webrtc *** is a framework agnostic web componenet that allows you to add simple live video conferencing features with just HTML tags. It is based in p2p webrtc protocol and firebase as a signalling server. It hides away the complexity of signalling, STUN/TURN server, and peer connections. You may run it in any framework with just few lines of HTML code.
+***Fire Webrtc*** is a framework agnostic web componenet that allows you to add simple live video conferencing features with just HTML tags. It is based in p2p webrtc protocol and firebase as a signalling server. It hides away the complexity of signalling, STUN/TURN server, and peer connections. You may run it in any framework with just few lines of HTML code.
 
 ## Quick start
 
