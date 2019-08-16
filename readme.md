@@ -20,8 +20,8 @@
  ```
 3. Load fire-webrtc library in HTML
 ``` HTML
-  <script type="module" src="https://unpkg.com/fire-webrtc@0.0.3/dist/fire-rtc/fire-rtc.esm.js"></script>
-  <script nomodule src="https://unpkg.com/fire-webrtc@0.0.3/dist/fire-rtc.js"></script>
+  <script type="module" src="https://unpkg.com/fire-webrtc@0.0.5/dist/fire-rtc/fire-rtc.esm.js"></script>
+  <script nomodule src="https://unpkg.com/fire-webrtc@0.0.5/dist/fire-rtc.js"></script>
 ```
 4. Fire up the webcomponent
 
@@ -34,7 +34,7 @@
 ```
 ## Screenshot
 
-![icp2](1.png)
+![app](1.png)
 
 ## Todo
 1. Create data channel web components
